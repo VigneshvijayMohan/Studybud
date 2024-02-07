@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+
+{% block title %} Home page {% endblock title %}
+
+{% block body %}
+<div>
+    <form method="POST", actions="">
+        {% csrf_token %}
+        {{form.as_p}}
+
+        <input type="Submit" value="Submit">
+    </form>
+</div> 
+
+
+
+{% endblock body %}
